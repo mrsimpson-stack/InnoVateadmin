@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestPro - User Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar (same as dashboard) -->
+        <aside class="admin-sidebar">
+            <!-- ... same sidebar as dashboard ... -->
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <h1>User Management</h1>
+                <div class="admin-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search users...">
+                        <button><i class="icon-search"></i></button>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="admin-table-container">
+                <table class="admin-table" id="users-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Balance</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Users will be loaded here -->
+                    </tbody>
+                </table>
+                
+                <div class="table-actions">
+                    <div class="pagination">
+                        <button class="btn-pagination" disabled>Previous</button>
+                        <span>Page 1 of 1</span>
+                        <button class="btn-pagination" disabled>Next</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
