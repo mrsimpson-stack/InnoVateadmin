@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Hardcoded admin credentials (for demo only)
             // In production, use proper authentication
-            const ADMIN_EMAIL = 'admin@investpro.com';
+            const ADMIN_EMAIL = 'technologysimpson@gmail.com';
             const ADMIN_PASSWORD = 'admin123';
             
             if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
