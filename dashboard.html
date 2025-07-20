@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestPro - Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <h2>InvestPro</h2>
+                <p>Admin Panel</p>
+            </div>
+            
+            <nav class="admin-nav">
+                <a href="dashboard.html" class="active">
+                    <i class="icon-dashboard"></i> Dashboard
+                </a>
+                <a href="users.html">
+                    <i class="icon-users"></i> Users
+                </a>
+                <a href="withdrawals.html">
+                    <i class="icon-withdraw"></i> Withdrawals
+                </a>
+                <a href="#">
+                    <i class="icon-settings"></i> Settings
+                </a>
+                <button id="admin-logout" class="btn-logout">
+                    <i class="icon-logout"></i> Logout
+                </button>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <h1>Dashboard Overview</h1>
+                <div class="admin-user">
+                    <span>Admin User</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+            
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <div class="stat-icon total-users">
+                        <i class="icon-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Users</h3>
+                        <p id="total-users-count">0</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon active-users">
+                        <i class="icon-active"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Active Users</h3>
+                        <p id="active-users-count">0</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon pending-withdrawals">
+                        <i class="icon-withdraw"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Pending Withdrawals</h3>
+                        <p id="pending-withdrawals-count">0</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon total-deposits">
+                        <i class="icon-deposit"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Deposits</h3>
+                        <p id="total-deposits-amount">$0</p>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="recent-activity">
+                <h2>Recent Activity</h2>
+                <div class="activity-list" id="recent-activity">
+                    <!-- Activity items will be inserted here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
